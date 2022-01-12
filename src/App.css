@@ -12,8 +12,14 @@
 
 .footer{
     background-color: #001529;
+    text-align: center;
 }
 
-.footer-icon{
-    text-align: center;
+.footer-icon a {
+    padding: 15px;
+}
+
+.home-heading-container{
+    display: flex;
+    justify-content: space-between;
 }
