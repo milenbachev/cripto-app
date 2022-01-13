@@ -23,3 +23,8 @@
     display: flex;
     justify-content: space-between;
 }
+
+.crypto-image{
+    width: 22px;
+    height: auto;
+}

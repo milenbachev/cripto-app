@@ -26,12 +26,12 @@ const Home = () =>{
                 <Col span={12}><Statistic title="Total Markets" value={millify(globalState.totalMarkets)}/></Col>
             </Row>
             <div className='home-heading-container'>
-                <Typography.Title level={2} className='home-title'>Lates Crypto news</Typography.Title>
+                <Typography.Title level={2} className='home-title'>Top 10 Cryptocurrencies</Typography.Title>
                 <Typography.Title level={3} className='show-more'><Link to="/cryptocurrencies">Show More</Link></Typography.Title>
             </div>
             <Cryptocurrencies simplified/>
             <div className='home-heading-container'>
-                <Typography.Title level={2} className='home-title'>Top 10 Cryptocurrencies</Typography.Title>
+                <Typography.Title level={2} className='home-title'>Lates Crypto news</Typography.Title>
                 <Typography.Title level={3} className='show-more'><Link to="/news">Show More</Link></Typography.Title>
             </div>
             <News simplified/>
