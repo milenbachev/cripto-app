@@ -28,3 +28,9 @@
     width: 22px;
     height: auto;
 }
+
+.search-crypto{
+    width: 300px;
+    margin: auto;
+    padding: 55px;
+}

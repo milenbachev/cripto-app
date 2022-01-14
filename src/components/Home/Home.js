@@ -10,7 +10,7 @@ import {useGetCryptosQuery} from '../../services/cryptoApi';
 
 
 const Home = () =>{
-    const{data, isFetching} = useGetCryptosQuery();
+    const{data, isFetching} = useGetCryptosQuery(10);
     const globalState = data?.data?.stats;
 
     if(isFetching) return 'Loading...'
