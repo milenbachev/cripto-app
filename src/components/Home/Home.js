@@ -17,8 +17,8 @@ const Home = () =>{
    
     return(
         <div>
-            <Typography.Title level={2} className='heading'></Typography.Title>
-            <Row>
+            <Typography.Title level={2} className='heading'>Global Crypto Stats</Typography.Title>
+            <Row gutter={[32, 32]}>
                 <Col span={12}><Statistic title="Total Cryptocurrencies" value={globalState.total}/></Col>
                 <Col span={12}><Statistic title="Total Exchanges" value={millify(globalState.totalExchanges)}/></Col>
                 <Col span={12}><Statistic title="Total Market Cap" value={millify(globalState.totalMarketCap)}/></Col>
