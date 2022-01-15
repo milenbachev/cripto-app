@@ -34,3 +34,40 @@
     margin: auto;
     padding: 55px;
 }
+
+.coin-detail-container-heading{
+    text-align: center;
+}
+
+.coin-detail-container{
+    padding: 25px;
+}
+.select-timeperiod{
+    width: 200px;
+}
+
+.stats-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+
+.coin-stats{
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin-stats-name-icon{
+    padding-right: 25px;
+}
+
+
+
+.coin-desc-link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin-desc{
+    width: 650px;
+}
