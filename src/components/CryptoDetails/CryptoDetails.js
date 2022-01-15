@@ -6,7 +6,7 @@ import millify from 'millify';
 import { Col, Row, Typography, Select } from 'antd';
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, CheckOutlined, NumberOutlined, ThunderboltOutlined } from '@ant-design/icons';
 
-import { useGetCryptoDetailsQuery } from '../../services/cryptoApi'
+import { useGetCryptoDetailsQuery} from '../../services/cryptoApi';
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -52,13 +52,13 @@ const CryptoDetails = () => {
                 </Col>
             </div>
             <Select
-                    defaultValue='7d'
-                    className='select-timeperiod'
-                    placeholder='Select Time period'
-                    onChange={(value) => setTimePeriod(value)}
-                >
-                    {time.map((data) => <Option key={data}>{data}</Option>)}
-                </Select>
+                defaultValue='7d'
+                className='select-timeperiod'
+                placeholder='Select Time period'
+                onChange={(value) => setTimePeriod(value)}
+            >
+                {time.map((data) => <Option key={data}>{data}</Option>)}
+            </Select>
             <Col className='stats-container'>
                 <Col className='coin-value-statistics'>
                     <Col className='coin-value-statistics-heading'>
@@ -103,7 +103,9 @@ const CryptoDetails = () => {
                 <Row className='coin-desc'>
                     <Title level={3} className='coin-details-heading'>
                         What is {cryptoDetails.name}
-                        {HTMLReactParser(cryptoDetails.description)}
+                        <div className='coin-details-text'>
+                            {HTMLReactParser(cryptoDetails.description)}
+                        </div>
                     </Title>
                 </Row>
                 <Col className='coin-link'>
